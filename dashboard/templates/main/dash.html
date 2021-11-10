@@ -3,9 +3,95 @@
 {% load static %}
 {% block content %}
 <section>
-    <button class="btn btn-success">Test</button>
-    <div class="image">
-        <img src="../../../static/img/1.jpg" class="img-fluid" alt="" srcset="">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h3><span class="lab la-accusoft"></span>KMPDC</h3>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="" class="active"><span class="las la-igloo"></span> <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-users"></span> <span>Customers</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span> <span>Projects</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-shopping-bag"></span> <span>Orders</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-receipt"></span> <span>Inventory</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-user-circle"></span> <span>Accounts</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span> <span>Tasks</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h3>
+                <label for="">
+                    <span class="las la-bars"></span>
+                </label> Dashboard
+            </h3>
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search here">
+            </div>
+            <div class="user-wrapper">
+                <img src="../../../static/img/logo/fav.png" width="40px" height="40px" alt="" srcset="">
+                <div>
+                    <h4>Enock Abere</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span>Customer</span>
+                    </div>
+                    <div>
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>90</h1>
+                        <span>Projects</span>
+                    </div>
+                    <div>
+                        <span class="las la-clipboard-list"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span>Orders</span>
+                    </div>
+                    <div>
+                        <span class="las la-shopping-bag"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>$54k</h1>
+                        <span>Income</span>
+                    </div>
+                    <div>
+                        <span class="lab la-google-wallet"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </section>
 
