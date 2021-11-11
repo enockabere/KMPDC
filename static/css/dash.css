@@ -1,0 +1,32 @@
+:root {
+    --header-height: 3rem;
+    --first-color: #144a85;
+    --first-color-light: #6c8aaf;
+    --green-color: #134326;
+    --red-color: #e51e25;
+    --sand-tan: #e1b382;
+    --dark-color: #444a4a;
+    --olive: #A3BCB6;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100
+}
+
+.smalls a {
+    font-size: .9rem;
+    margin-left: 40px;
+    border-left: 2px solid var(--first-color-light);
+
+}
+
+#care {
+    margin-left: auto;
+    margin-right: 10px;
+    color: #222;
+    font-size: 15px;
+}
+
+#care:hover {
+    color: #fff;
+}

@@ -3,96 +3,148 @@
 {% load static %}
 {% block content %}
 <section>
-    <div class="sidebar">
-        <div class="sidebar-brand">
-            <h3><span class="lab la-accusoft"></span>KMPDC</h3>
-        </div>
-        <div class="sidebar-menu">
-            <ul>
-                <li>
-                    <a href="" class="active"><span class="las la-igloo"></span> <span>Dashboard</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="las la-users"></span> <span>Customers</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="las la-clipboard-list"></span> <span>Projects</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="las la-shopping-bag"></span> <span>Orders</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="las la-receipt"></span> <span>Inventory</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="las la-user-circle"></span> <span>Accounts</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="las la-clipboard-list"></span> <span>Tasks</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="main-content">
-        <header>
-            <h3>
-                <label for="">
-                    <span class="las la-bars"></span>
-                </label> Dashboard
-            </h3>
-            <div class="search-wrapper">
-                <span class="las la-search"></span>
-                <input type="search" placeholder="Search here">
+
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header_toggle">
+                <i class='las la-bars' id="header-toggle"></i>
             </div>
-            <div class="user-wrapper">
-                <img src="../../../static/img/logo/fav.png" width="40px" height="40px" alt="" srcset="">
-                <div>
-                    <h4>Enock Abere</h4>
-                    <small>Super Admin</small>
-                </div>
+            <div class="header_img">
+                <img src="../../../static/img/logo/fav.png" class="img-fluid" alt="">
             </div>
         </header>
-        <main>
-            <div class="cards">
-                <div class="card-single">
-                    <div>
-                        <h1>54</h1>
-                        <span>Customer</span>
-                    </div>
-                    <div>
-                        <span class="las la-users"></span>
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav_logo">
+                        <i class='lab la-medrt'></i>
+                        <span class="nav_logo-name">KMPDC</span>
+                    </a>
+
+                    <div class="nav_list">
+                        <a href="#" class="nav_link active">
+                            <i class="las la-grip-horizontal nav_icon"></i>
+                            <span class="nav_name">Dashboard</span>
+                        </a>
+                        <li>
+                            <a href="#menu" data-toggle="collapse" aria-expanded="false" class="nav_link" type="button">
+                                <i class="las la-users" style="color: #08ece1;font-size:22px"></i>
+                                <span class="nav_name">Human Resource</span><i class="las la-angle-down" id="care"></i>
+                            </a>
+                            <ul class="collapse list-unstyled smalls" id="menu">
+                                <li>
+                                    <a class="nav_link" href="#">Leave Requests</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Training Requests</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Loans</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#menu2" data-toggle="collapse" aria-expanded="false" class="nav_link" type="button"
+                                data-bs-parent="menu2">
+                                <i class="las la-wallet" style="color: #851472;font-size:22px"></i>
+                                <span class="nav_name">Finance</span><i class="las la-angle-down" id="care"></i>
+                            </a>
+                            <ul class="collapse list-unstyled smalls" id="menu2">
+                                <li>
+                                    <a class="nav_link" href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#menu3" data-toggle="collapse" aria-expanded="false" class="nav_link" type="button"
+                                data-bs-parent="menu">
+                                <i class="las la-store-alt" style="color: #144a85;font-size:22px"></i>
+                                <span class="nav_name">Procurement</span><i class="las la-angle-down" id="care"></i>
+                            </a>
+                            <ul class="collapse list-unstyled smalls" id="menu3">
+                                <li>
+                                    <a class="nav_link" href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#menu4" data-toggle="collapse" aria-expanded="false" class="nav_link" type="button"
+                                data-bs-parent="menu4">
+                                <i class="las la-user-check" style="color: green;font-size:22px"></i>
+                                <span class="nav_name">Approvals</span><i class="las la-angle-down" id="care"></i>
+                            </a>
+                            <ul class="collapse list-unstyled smalls" id="menu4">
+                                <li>
+                                    <a class="nav_link" href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#menu5" data-toggle="collapse" aria-expanded="false" class="nav_link" type="button"
+                                data-bs-parent="menu">
+                                <i class="la la-automobile" style="color: orangered;font-size:22px"></i>
+                                <span class="nav_name">Reports</span> <i class="las la-angle-down" id="care"></i>
+                            </a>
+                            <ul class="collapse list-unstyled smalls" id="menu5">
+                                <li>
+                                    <a class="nav_link" href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#menu6" data-toggle="collapse" aria-expanded="false" class="nav_link"
+                                type="button">
+                                <i class="las la-user-check" style="color: rebeccapurple;font-size:22px"></i>
+                                <span class="nav_name">Case Management</span> <i class="las la-angle-down"
+                                    id="care"></i>
+                            </a>
+                            <ul class="collapse list-unstyled smalls" id="menu6">
+                                <li>
+                                    <a class="nav_link" href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a class="nav_link" href="#">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
                     </div>
                 </div>
-                <div class="card-single">
-                    <div>
-                        <h1>90</h1>
-                        <span>Projects</span>
-                    </div>
-                    <div>
-                        <span class="las la-clipboard-list"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <h1>54</h1>
-                        <span>Orders</span>
-                    </div>
-                    <div>
-                        <span class="las la-shopping-bag"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <h1>$54k</h1>
-                        <span>Income</span>
-                    </div>
-                    <div>
-                        <span class="lab la-google-wallet"></span>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
+                <a href="#" class="nav_link">
+                    <i class="las la-sign-out-alt"></i>
+                    <span class="nav_name">SignOut</span>
+                </a>
+            </nav>
+        </div>
+        <div class="height-100 py-4">
+            <h4>Main Components</h4>
+        </div>
 </section>
 
 {% endblock %}
