@@ -45,8 +45,13 @@ $(document).ready(function () {
         $("#nav-bar").addClass('show');
         $("#header").addClass('body-pd');
         $("#body-pd").addClass('body-pd');
+        $("#nav_p").show();
+        $('.nav::-webkit-scrollbar').show(500)
 
     })
-
+    $("#header-toggle").click(function (e) {
+        e.preventDefault();
+        $("#nav_p").hide();
+    })
 })
 // menu
