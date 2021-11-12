@@ -13,11 +13,17 @@
     --z-fixed: 100
 }
 
+
 .smalls a {
     font-size: .9rem;
     margin-left: 40px;
     border-left: 2px solid var(--first-color-light);
+    margin-bottom: .0rem;
 
+}
+
+.smalls a.active::before {
+    display: none;
 }
 
 #care {
@@ -50,11 +56,9 @@
     -webkit-box-shadow: inset 0 0 6px rgba(168, 167, 167, 0.5);
 }
 
-#out {
-    background: none;
-    border-radius: none;
-}
-
-#out:hover {
-    color: var(--red-color)
+.n-footer {
+    margin: 0;
+    padding: 0;
+    margin-right: -250px;
+    background: linear-gradient(to right top, #e1b382, #ccb986, #b9bd90, #aabf9d, #a2bfaa, #a4c4b8, #aac8c4, #b4cbcd, #c4d5dc, #d6e0e8, #e7eaf2, #f7f6fb);
 }
